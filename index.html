@@ -326,7 +326,72 @@
       color: var(--gold);
     }
 
- 
+    /* ─── CONTACT ─── */
+    .contact {
+      background: var(--cream-dark);
+      text-align: center;
+      padding: 6rem 3rem;
+    }
+    .contact .section-title {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    .contact-sub {
+      font-size: 0.88rem;
+      color: var(--ink-light);
+      font-weight: 300;
+      margin: 1.2rem auto 0;
+      max-width: 460px;
+      line-height: 1.8;
+    }
+    .contact-details {
+      display: flex;
+      justify-content: center;
+      gap: 3.5rem;
+      margin-top: 2.8rem;
+    }
+    .contact-item { text-align: center; }
+    .contact-item-label {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.4rem;
+    }
+    .contact-item a, .contact-item span {
+      font-size: 0.88rem;
+      color: var(--ink-mid);
+      text-decoration: none;
+      font-weight: 400;
+      transition: color 0.3s;
+    }
+    .contact-item a:hover { color: var(--gold); }
+    .contact-name {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--ink);
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--ink);
+      color: rgba(245,242,236,0.4);
+      padding: 2rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.72rem;
+      letter-spacing: 0.04em;
+    }
+    footer a {
+      color: rgba(245,242,236,0.4);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    footer a:hover { color: var(--gold); }
+
     /* ─── ANIMATIONS ─── */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(28px); }
@@ -343,7 +408,6 @@
       section { padding: 4rem 1.5rem; }
       .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
       .services-grid { grid-template-columns: 1fr; }
-      .meditations-content { grid-template-columns: 1fr; gap: 2rem; }
       .stats-strip { grid-template-columns: 1fr; }
       .contact-details { flex-direction: column; gap: 1.5rem; }
       .hero-cta { flex-direction: column; align-items: center; }
@@ -412,7 +476,7 @@
       </p>
     </div>
     <div class="about-img-wrap">
-      <img src="headshot.jpg" alt="Millie, Managing Partner of 5 Fish LLC" />
+      <img src="headshot.jpg" alt="Managing Partner of 5 Fish LLC" />
     </div>
   </div>
 </section>
@@ -437,7 +501,6 @@
   </div>
 </section>
 
-
 <!-- CONTACT -->
 <section class="contact">
   <div class="section-label">Connect</div>
@@ -447,8 +510,12 @@
   </p>
   <div class="contact-details">
     <div class="contact-item">
+      <div class="contact-item-label">Managing Partner</div>
+	<a>Millie Ryba</a>
+    </div>
+    <div class="contact-item">
       <div class="contact-item-label">Email</div>
-      <a href="/cdn-cgi/l/email-protection#9af7fca8ababaedaafb7fcf3e9f2b4f9f5f7"><span class="__cf_email__" data-cfemail="afc2c99d9e9e9bef9a82c9c6dcc781ccc0c2">[email&#160;protected]</span></a>
+      <a href="mailto:MR592A@5-fish.com">MR592A@5-fish.com</a>
     </div>
     <div class="contact-item">
       <div class="contact-item-label">Phone</div>
@@ -462,8 +529,4 @@
 </section>
 
 <!-- FOOTER -->
-<footer>
-  <span>© 2026 5 Fish LLC — Chicago, IL. All Rights Reserved.</span>
-  <div>
-    <a href="index.html">Home</a> &nbsp;|&nbsp;
- 
+<footer
